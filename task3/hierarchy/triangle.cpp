@@ -1,0 +1,40 @@
+#include <iostream>
+#include <clocale>
+#include "triangle.h"
+
+
+double Triangle::getA() { return A; };
+double Triangle::getB() { return B; };
+double Triangle::getC() { return C; };
+
+void Triangle::print()
+{
+    std::cout << "Треугольник:" << std::endl;
+    std::cout << "Стороны: " << "a = " << a << " " << "b = " << b << " " << "c = " << c << std::endl;
+    std::cout << "Углы: " << "A = " << A << " " << "B = " << B << " " << "C = " << C << std::endl;
+}
+
+
+void RightTriangle::print()
+{
+    std::cout << "Прямоугольный треугольник:" << std::endl;
+    std::cout << "Стороны: " << "a = " << a << " " << "b = " << b << " " << "c = " << c << std::endl;
+    std::cout << "Углы: " << "A = " << A << " " << "B = " << B << " " << "C = " << C << std::endl;
+}
+
+
+void Identical_triangle::print()
+{
+    std::cout << "Равнобедренный треугольник:" << std::endl;
+    std::cout << "Стороны: " << "a = " << a << " " << "b = " << b << " " << "c = " << c << std::endl;
+    std::cout << "Углы: " << "A = " << A << " " << "B = " << B << " " << "C = " << C << std::endl;
+}
+
+
+void Equal_triangle::print()
+{
+    std::cout << "Равноcторонний треугольник:" << std::endl;
+    std::cout << "Стороны: " << "a = " << a << " " << "b = " << b << " " << "c = " << c << std::endl;
+    std::cout << "Углы: " << "A = " << A << " " << "B = " << B << " " << "C = " << C << std::endl;
+}
+
